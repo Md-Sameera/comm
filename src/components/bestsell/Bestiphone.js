@@ -15,7 +15,7 @@ const images = [
 const Bestiphone = () => {
     const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/iphone/";
+      const url = "https://backcomm.herokuapp.com/api/iphone/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
