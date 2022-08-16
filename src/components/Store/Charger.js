@@ -5,7 +5,7 @@ import "../Styles.css";
 const Charger = () => {
     const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/charger/";
+      const url = "https://backcomm.herokuapp.com/api/charger/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
