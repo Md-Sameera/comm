@@ -6,7 +6,7 @@ const Camera = () => {
 
     const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/camera/";
+      const url = "https://backcomm.herokuapp.com/api/camera/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
