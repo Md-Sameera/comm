@@ -72,7 +72,7 @@ const Cart = () => {
     <>
         <div className="app">
           <div className="login-form">
-            <div className="title">Order Placed:</div>
+            <div className="title">Place Order:</div>
             {isSubmitted ? <div>Your Order has been Placed .<div><Link to={"/home"}>Lets go to main website</Link></div> </div> : renderForm}
           </div>
         </div>
