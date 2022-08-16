@@ -5,7 +5,7 @@ import "./Styles.css";
 const Macbook = () => {
   const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/mac/";
+      const url = "https://backcomm.herokuapp.com/api/mac/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
