@@ -12,7 +12,7 @@ const Main = () => {
     setSearchInput(e.target.value);
   };
     useEffect(()=>{
-      const url = "http://localhost:40025/api/fpro/";
+      const url = "https://backcomm.herokuapp.com/api/fpro/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
