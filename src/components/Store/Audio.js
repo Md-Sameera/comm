@@ -5,7 +5,7 @@ import "../Styles.css";
 const Audio = () => {
     const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/audio/";
+      const url = "https://backcomm.herokuapp.com/api/audio/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
