@@ -5,7 +5,7 @@ import "../Styles.css";
 const Keyboard = () => {
     const [data , useData] = useState([])
   useEffect(()=>{
-      const url = "http://localhost:40025/api/keyboard/";
+      const url = "https://backcomm.herokuapp.com/api/keyboard/";
       fetch(url).then(res => res.json())
       .then(useData)
       .catch(err=>console.log(err))
